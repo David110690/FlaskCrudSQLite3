@@ -1,0 +1,22 @@
+.title{
+    font-family: 'Lobster', cursiva;
+}
+
+body{
+    background: #C02425;  
+    background: -webkit-linear-gradient(to right, #F0CB35, #C02425);  
+    background: linear-gradient(to right, #F0CB35, #C02425); 
+    color: black;
+}
+    
+
+.done {
+    text-decoration: line-through; 
+    color: #cfcfcf;
+
+}
+
+.normal{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}

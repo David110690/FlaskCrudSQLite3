@@ -1,12 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
 .title{
-    font-family: 'Lobster', cursiva;
+    font-family: 'Yusei Magic', sans-serif;
+    font-weight: 400;
 }
 
 body{
-    background: #C02425;  
-    background: -webkit-linear-gradient(to right, #F0CB35, #C02425);  
-    background: linear-gradient(to right, #F0CB35, #C02425); 
-    color: black;
+    background: #1f4037;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #99f2c8, #1f4037);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #99f2c8, #1f4037); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 }
     
 

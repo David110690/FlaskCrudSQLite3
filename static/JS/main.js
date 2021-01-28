@@ -6,8 +6,13 @@ if(btnDelete){
         btn.addEventListener('click', (e) => { 
             if (!confirm('Desea eliminar?')){ 
                 e.preventDefault();
+                
             }
         });
     });
 }
+
+
+
+
 

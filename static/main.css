@@ -1,18 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
-
-.title{
-    font-family: 'Yusei Magic', sans-serif;
-    font-weight: 400;
-}
-
-body{
-    background: #1f4037;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #99f2c8, #1f4037);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #99f2c8, #1f4037); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
-}
-    
-
 .done {
     text-decoration: line-through; 
     color: #cfcfcf;
@@ -21,5 +6,26 @@ body{
 
 .normal{
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    
 }
+
+html,body{
+    height: 100%;
+    margin: 0;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(6, 66, 90) 0%, rgba(0,212,255,1) 96%);
+
+}
+
+.myForm{
+background-color: rgba(0,0,0,0.5) !important;
+padding: 15px !important;
+border-radius: 15px !important;
+color: white;
+opacity: 0.9;
+-moz-opacity: 0.9;
+filter: alpha(opacity=90);
+-khtml-opacity: 0.9;
+
+}
+

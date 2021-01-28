@@ -1,6 +1,6 @@
-from flask import Flask  
+from flask import Flask
 from flask import render_template, request, redirect, url_for
-from flask_sqlalchemy import SQLAlchemy 
+from flask_sqlalchemy import SQLAlchemy
 
 
 app = Flask(__name__)
@@ -9,20 +9,23 @@ db = SQLAlchemy(app)
 
 class Task(db.Model):
     id = db.Column(db.Integer, primary_key=True)
+    title = db.Column(db.String(100))
     content = db.Column(db.String(200))
     done = db.Column(db.Boolean)
 
+app.secret_key = "da8vi2.d"
 @app.route('/')
 def home():
     tasks = Task.query.all()
-    return render_template('index.html', tasks = tasks)
+    return render_template('index.html', task = tasks)
 
 @app.route('/create-task', methods=['POST'])
 def create():
-    task = Task(content=request.form['content'], done=False)
+    task = Task(content=request.form['content'], title=request.form['title'], done=False)
     db.session.add(task)
     db.session.commit()
     return redirect(url_for('home'))
+    
 
 @app.route('/done/<id>')
 def done(id):
